@@ -26,10 +26,10 @@ matriz, y ese punto es el centro del círculo del eslabón siguiente.)
 
 Posición del efector: x = 6.6502, y = 7.2949
 
-### Caso 2: th = (90°, -60°, 45°)
+### Caso 2: th = (90°, 60°, 45°)
 ![caso 2](img/arm_angles2.png)
 
-Posición del efector: x = 3.5487, y = 8.6819
+Posición del efector: x = -4.9629, y = 6.2324
 
 ## Conclusiones
 el alcance máximo es 5 + 3.5 + 2 = 10.5, cada círculo
