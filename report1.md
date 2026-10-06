@@ -3,35 +3,32 @@
 **Nombre:** Diego Crespo Padilla
 **Fecha:** 6 de octubre de 2026
 
-## Objetivo
-Dibujar un brazo planar de tres eslabones con transformaciones homogéneas 2D,
-mostrando un marco por eslabón, el marco del efector final y el alcance de cada eslabón.
+## Description
 
-## Parámetros
-| Eslabón | Longitud |
+El script `arm3planar.py` dibuja un brazo planar de tres eslabones usando transformaciones homogéneas 2D. Cada eslabón tiene su propio marco de referencia, encadenado al anterior, además de un marco en el efector final. También dibuja un círculo punteado por eslabón, centrado en su articulación y con radio igual a la longitud del eslabón.
+
+## Parameters
+
+| Parameter | Value |
 |---|---|
 | L1 | 5 |
 | L2 | 3.5 |
 | L3 | 2 |
 
-## Metodología
-(Explica con tus palabras: cada marco se obtiene multiplicando el anterior por
-transl2(L, 0), que avanza a lo largo del eslabón, y trot2(th), que gira la
-siguiente articulación. El origen de cada marco está en la última columna de su
-matriz, y ese punto es el centro del círculo del eslabón siguiente.)
+## Results
 
-## Resultados
-### Caso 1: th = (30°, 45°, -30°)
-![caso 1](img/arm_angles1.png)
+### Angles set 1
 
-Posición del efector: x = 6.6502, y = 7.2949
+th1 = 30°, th2 = 45°, th3 = -30°
 
-### Caso 2: th = (90°, 60°, 45°)
-![caso 2](img/arm_angles2.png)
+![Arm with angles set 1](img/arm_angles1.png)
 
-Posición del efector: x = -4.9629, y = 6.2324
+### Angles set 2
 
-## Conclusiones
-el alcance máximo es 5 + 3.5 + 2 = 10.5, cada círculo
-se mueve con la articulación de su eslabón, el efector queda dentro del círculo
-del último eslabón, etc.
+th1 = 90°, th2 = 60°, th3 = 45°
+
+![Arm with angles set 2](img/arm_angles2.png)
+
+## Code
+
+[arm3planar.py](arm3planar.py)
