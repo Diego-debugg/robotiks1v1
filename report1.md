@@ -27,7 +27,7 @@ matriz, y ese punto es el centro del círculo del eslabón siguiente.)
 Posición del efector: x = 6.6502, y = 7.2949
 
 ### Caso 2: th = (90°, -60°, 45°)
-![caso 2](img/arm_angles2.png.png)
+![caso 2](img/arm_angles2.png)
 
 Posición del efector: x = 3.5487, y = 8.6819
 
