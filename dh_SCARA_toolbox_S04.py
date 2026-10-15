@@ -15,7 +15,7 @@ scara= rtb.DHRobot(
 [
 	rtb.RevoluteDH(d=0.160, a=0.350, alpha= 0, qlim=[-2.58, 2.58]),
 	rtb.RevoluteDH(d=0, 	a=0.300, alpha=0, qlim=[-2.61, 2.61]),
-	rtb.PrismaticDH(theta=0, a=0, alpha=np.pi, offset=0.21, qlim=[-0.370, 0.0]),
+	rtb.PrismaticDH(theta=0, a=0, alpha=np.pi, offset=0.21, qlim=[0.210, 0.0]),
 	rtb.RevoluteDH(d=0, a=0, alpha=0, qlim=[-6.28, 6.28])
 ], name="SR6iA", base=SE3(0,0,0))
 print(scara)
@@ -53,7 +53,7 @@ scara.plot(q=q, backend='pyplot',dt=3, limits=[-0.8,0.8,-0.8,0.8,-0.4,0.6], shad
 # scara.plot(q=q, backend='pyplot',dt=3, limits=[-0.8,0.8,-0.8,0.8,-0.4,0.6], shadow=True, loop=False, jointaxes=True, movie="robot.gif")
 
 # Graficar con controlador
-# q1=np.array([[0, 0, 0, 0]])
-# scara.teach(q1)
+q1=np.array([[0, 0, 0, 0]])
+scara.teach(q1)
 
 
