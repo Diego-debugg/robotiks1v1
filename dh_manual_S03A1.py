@@ -11,7 +11,7 @@ from spatialmath.base import *
 theta, d, a, alpha = sp.symbols('theta, d, a, alpha')
 
 # RzTzTxRx matrix
-TDH= trotz(theta) @ transl(0,0, d) @ transl(a,0, 0) @ trotx(alpha)
+TDH= trotz(theta) @ transl(0,0, d) @ transl(a,0, 0) @ trotx(alpha) # type: ignore
 sp.pprint(TDH)
 print(type(TDH))
 
