@@ -25,9 +25,9 @@ robot.plot(q=[0, 0, 0], limits=[-0.9,0.9,-0.9,0.9,-0.1,1.0], backend='pyplot', s
 
 # #We validate the DH with forward kinematics
 # #To change the angles conveniently
-joint1 = 45  #In degrees
-joint2 = 30
-joint3 = 60
+joint1 = 110  #In degrees
+joint2 = -90
+joint3 = 0
 
 T=robot.fkine([np.deg2rad(joint1), np.deg2rad(joint2), np.deg2rad(joint3)])
 print(T)
